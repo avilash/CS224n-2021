@@ -8,7 +8,7 @@ $A_i =  u_i^Tv_c$
 $A = U^Tv_c$  
 $P = softmax(A)$  
 $L = -y*log(P)$  
- 
+
 [Derivative of softmax and cross entropy](https://deepnotes.io/softmax-crossentropy)  
 $dP_i/dA_i = 
 \begin{cases} 
