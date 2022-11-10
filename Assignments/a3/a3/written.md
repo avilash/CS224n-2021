@@ -12,11 +12,11 @@ It helps to normalise the parameter updates, as it reduces the effective learnin
 
 **i**
 $\gamma=1/p_drop$
-During training $p_drop$ ratio of the neurons are dropped, but during testing all the neurons are present.
+During training $p_drop$ ratio of the neurons are dropped, but during testing all the neurons are present.  
 So the output is scaled by $\gamma$ so that the future layers receive values in the same scale as it saw during training.
 
 **ii**
-Dropout during training helps in regularisation, as it helps the future layers to use as many neurons in making decisions, since either of them could be dropped randomly.
+Dropout during training helps in regularisation, as it helps the future layers to use as many neurons in making decisions, since either of them could be dropped randomly.  
 During test time we want our results to be deterministic across multiple forward passes and hence we cannot induce randomness into the model.
 
 
@@ -41,30 +41,30 @@ During test time we want our results to be deterministic across multiple forward
 
 #### b)
 
-At every step, a word is either pushed into the stack or popped off it.
+At every step, a word is either pushed into the stack or popped off it.  
 Since there are n words and every word goes on and off the stack once, there are a total number of $2n$ steps
 
 #### f)
 
 **i**
-Error: Verb phrase attachment error
-Incorrect dependency: wedding -> fearing
-Correct dependency: heading -> fearing
+Error: Verb phrase attachment error  
+Incorrect dependency: wedding -> fearing  
+Correct dependency: heading -> fearing  
 
-**ii**
-Error: Coordination attachment error
-Incorrect dependency: makes -> rescue
-Correct dependency: rush -> rescue
+**ii**  
+Error: Coordination attachment error  
+Incorrect dependency: makes -> rescue  
+Correct dependency: rush -> rescue  
 
-**ii**
-Error: Prepositional phrase attachment error
-Incorrect dependency: named -> midland
-Correct dependency: guy -> midland
+**iii**  
+Error: Prepositional phrase attachment error  
+Incorrect dependency: named -> midland  
+Correct dependency: guy -> midland  
 
-**ii**
-Error: Modifier attachment error
-Incorrect dependency: elements -> most
-Correct dependency: crucial -> most
+**iv**  
+Error: Modifier attachment error  
+Incorrect dependency: elements -> most  
+Correct dependency: crucial -> most  
 
 
 
